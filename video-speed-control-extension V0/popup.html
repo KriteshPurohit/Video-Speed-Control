@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Speed Control</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="popup-container">
+    <header>
+      <img src="icons/iconlogo.png" alt="icon" class="logo" />
+      <h1>Video Speed Control</h1>
+    </header>
+    <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="enabled" />
+        <span class="slider round"></span>
+      </label>
+      <span id="toggleStatus">On</span>
+    </div>
+    <div class="card">
+      <p class="speed-display"><span id="currentSpeed">1.00</span>x</p>
+      <div class="controls-grid">
+        <button id="decrease" class="pill-btn">
+          <img src="icons/decrease.png" alt="decrease" class="btn-icon" />
+          <span>Decrease</span>
+        </button>
+        <button id="increase" class="pill-btn">
+          <img src="icons/increase.png" alt="increase" class="btn-icon" />
+          <span>Increase</span>
+        </button>
+        <button id="rewind" class="pill-btn">
+          <img src="icons/rewind.png" alt="rewind" class="btn-icon" />
+          <span>Rewind</span>
+        </button>
+        <button id="advance" class="pill-btn">
+          <img src="icons/advance.png" alt="advance" class="btn-icon" />
+          <span>Advance</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
